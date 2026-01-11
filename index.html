@@ -1,39 +1,107 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Phann Chanthariroza | Home</title>
-  <link rel="stylesheet" href="css/style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Phann Chanthariroza | Portfolio</title>
+
+  <link rel="stylesheet" href="style.css">
+  <script defer src="script.js"></script>
 </head>
 <body>
-  <!-- NAVBAR -->
+
+<header>
+  <div class="logo">PORTFOLIO.</div>
+
   <nav>
-    <div class="logo">PORTFOLIO.</div>
-    <ul>
-      <li><a href="index.html">Home</a></li>
-      <li><a href="about.html">About</a></li>
-      <li><a href="projects.html">Projects</a></li>
-      <li><a href="skills.html">Skills</a></li>
-      <li><a href="education.html">Education</a></li>
-      <li><a href="contact.html">Contact</a></li>
-      <li><button class="lang-btn" onclick="translateJapanese()">日本語</button></li>
-      <li><button class="lang-btn" onclick="toggleDarkMode()">🌙</button></li>
-    </ul>
+    <a href="#home">Home</a>
+    <a href="#about">About</a>
+    <a href="#projects">Projects</a>
+    <a href="#skills">Skills</a>
+    <a href="#education">Education</a>
+    <a href="#contact">Contact</a>
   </nav>
 
-  <!-- HOME CONTENT -->
-  <section id="home">
-    <img src="images/profile.png" alt="Profile Picture">
-    <h1>Phann Chanthariroza</h1>
-    <p>Software Development Student | Cambodia</p>
-    <a href="contact.html" class="btn">Contact Me</a>
-  </section>
+  <button id="darkToggle">🌙</button>
+</header>
 
-  <footer>
-    <p>© 2026 Phann Chanthariroza | Software Development Student | AUPP</p>
-  </footer>
+<!-- HERO -->
+<section id="home" class="hero reveal">
+  <img src="images/profile.jpg" class="profile-img" alt="Profile">
+  <h1>Phann Chanthariroza</h1>
+  <p class="subtitle">Software Development Student | Cambodia</p>
 
-  <script src="js/script.js"></script>
+  <div class="hero-btns">
+    <a href="#projects" class="btn">View Projects</a>
+    <a href="resume.pdf" class="btn outline" download>Download Resume</a>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section id="about" class="section reveal">
+  <h2>About Me</h2>
+  <p>
+    I am a Software Development student at AUPP passionate about web development,
+    networking, and AI-based systems. I enjoy turning ideas into practical projects.
+  </p>
+</section>
+
+<!-- PROJECTS -->
+<section id="projects" class="section gray reveal">
+  <h2>Projects</h2>
+
+  <div class="project-card">
+    <h3>Portfolio Website</h3>
+    <p>Responsive personal website using HTML, CSS, and JavaScript.</p>
+  </div>
+
+  <div class="project-card">
+    <h3>Plant Disease Detection</h3>
+    <p>Deep learning model for classifying plant diseases.</p>
+  </div>
+</section>
+
+<!-- SKILLS -->
+<section id="skills" class="section reveal">
+  <h2>Skills</h2>
+  <div class="skills-list">
+    <span>HTML</span>
+    <span>CSS</span>
+    <span>JavaScript</span>
+    <span>Python</span>
+    <span>Java</span>
+    <span>Networking</span>
+  </div>
+</section>
+
+<!-- EDUCATION -->
+<section id="education" class="section gray reveal">
+  <h2>Education</h2>
+  <p>
+    <strong>American University of Phnom Penh (AUPP)</strong><br>
+    Bachelor of Software Development
+  </p>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" class="section reveal">
+  <h2>Contact Me</h2>
+
+  <form class="contact-form">
+    <input type="text" placeholder="Your Name" required>
+    <input type="email" placeholder="Your Email" required>
+    <textarea placeholder="Your Message" rows="5" required></textarea>
+    <button type="submit" class="btn">Send Message</button>
+  </form>
+
+  <p class="note">
+    * Form is frontend-only. Connect to EmailJS or Formspree for real sending.
+  </p>
+</section>
+
+<footer>
+  © 2025 Phann Chanthariroza | Software Development Student | AUPP
+</footer>
+
 </body>
 </html>
